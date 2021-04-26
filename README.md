@@ -1,8 +1,11 @@
 
 # [San Francisco Pizza](https://eatsf.pizza)
+
+### ⚠️This is still a work in progress⚠️
+
 A list of pizza places in San Francisco, California.
 
-This is meant to be a comprehensive and neutral list of pizza in that can be found in San Francisco.
+This is meant to be a comprehensive and neutral list of pizza that can be found in San Francisco.
 Pizza places are listed by neighborhood. If a restaurant has more than 3 locations it's listed at
 the bottom in [Multiple Locations](#multiple-locations) section.
 
@@ -23,6 +26,8 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** Detriot
 - 📍 [Google Maps](https://g.page/cellarmakerhouseofpizza)
 
+---
+
 ### Castro/Upper Market
 
 #### [Marcello's](https://marcellospizza420.com/)
@@ -33,11 +38,15 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** New York
 - 📍 [Google Maps](https://g.page/ozpizzasf)
 
+---
+
 ### Civic Center
 
 #### [Del Popolo](https://www.delpopolosf.com/)
 - 🍕 **Style:** Neapolitan
 - 📍 [Google Maps](https://goo.gl/maps/8Awn9ricfCqPntBv9)
+
+---
 
 ### Financial District
 
@@ -49,11 +58,15 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** Neapolitan
 - 📍 [Google Maps](https://g.page/tommasos_sf)
 
+---
+
 ### Glen Park
 
 #### [Gialina](https://www.gialina.com/)
 - 🍕 **Style:** Neapolitan
 - 📍 [Google Maps](https://goo.gl/maps/nJ59gpEbn1MUXyvd7)
+
+---
 
 ### Haight Ashbury
 
@@ -61,11 +74,19 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** New York
 - 📍 [Google Maps](https://goo.gl/maps/dqMVCk1JGXsJbaJU8)
 
+---
+
 ### Inner Richmond
+
+---
 
 ### Inner Sunset
 
+---
+
 ### Marina
+
+---
 
 ### Mission
 
@@ -73,9 +94,15 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** New York
 - 📍 [Google Maps](https://goo.gl/maps/cohQ5tcHeavBG1js6)
 
+---
+
 ### Nob Hill
 
+---
+
 ### Noe Valley
+
+---
 
 ### North Beach
 
@@ -83,9 +110,15 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** Sicilian
 - 📍 [Google Maps](https://goo.gl/maps/avUgHrEfm2kXAG4y7)
 
+---
+
 ### Ocean View
 
+---
+
 ### Outer Mission
+
+---
 
 ### Outer Richmond
 
@@ -93,15 +126,27 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** Neapolitan
 - 📍 [Google Maps](https://goo.gl/maps/9BD3t4LxicJHbDdVA)
 
+---
+
 ### Outer Sunset
+
+---
 
 ### Pacific Heights
 
+---
+
 ### Parkside
+
+---
 
 ### Potrero Hill
 
+---
+
 ### Presidio Heights
+
+---
 
 ### Russian Hill
 
@@ -113,6 +158,8 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** Neapolitan
 - 📍 [Google Maps](https://goo.gl/maps/xaq1WoaNLHyLeGZ67)
 
+---
+
 ### South of Market
 
 #### [DNA Pizza](https://www.dnapizza.com/)
@@ -123,9 +170,15 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:** New York
 - 📍 [Google Maps](https://goo.gl/maps/KEJxmnbYgGTg7bi76)
 
+---
+
 ### Visitacion Valley
 
+---
+
 ### West of Twin Peaks
+
+---
 
 ### Western Addition
 
@@ -133,9 +186,13 @@ This page can be found at [https://eatsf.pizza](https://eatsf.pizza) or
 - 🍕 **Style:**
 - 📍 [Google Maps]()
 
+---
+
 ### Multiple Locations
 - Nizario's
 - Patxi's
+
+---
 
 ## Notes
 
