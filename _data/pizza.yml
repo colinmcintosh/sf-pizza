@@ -84,7 +84,7 @@ places:
     neighborhood: bernal_heights
     style:
       - Detroit
-    maps: https://www.google.com/maps/place/Cellarmaker+House+of+Pizza/@37.7457465,-122.4217815,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fe2326ae731:0xf88cab31c19dc344!8m2!3d37.7457572!4d-122.4196337
+    maps: https://maps.google.com/place/Cellarmaker+House+of+Pizza/@37.7457465,-122.4217815,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fe2326ae731:0xf88cab31c19dc344!8m2!3d37.7457572!4d-122.4196337
     website: https://cellarmakerbrewing.com/house-of-pizza/
 
   - name: Capo's
@@ -136,7 +136,7 @@ places:
   - name: Extreme Pizza
     neighborhood: multiple
     style:
-      - ?????
+      - California
     maps:
     website: https://www.extremepizza.com/
 
@@ -271,7 +271,6 @@ places:
     style:
       - Neapolitan
       - California
-      - Classic Italian
       - New York
       - Romana
       - Grandma

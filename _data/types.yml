@@ -1,56 +1,92 @@
 - name: California
-  description: A thin-crust style of pizza that combines elements of many other styles of pizza.
+  description: >
+    A thin-crust style of pizza that combines elements of many other styles of pizza.
     Topping are typically the same ingredients found in Californian cuisine such as artichoke,
     goat cheese, kale, beets, and nuts. California style pizza also usually has a low or no lip and
     topping will go nearly to the edge.
   image: chad-montano-California-MqT0asuoIcU-unsplash.jpg
 
 - name: Chicago deep-dish
+  description: >
+    Chicago style deep-dish pizza is thick pizza that's baked in a pan. Toppings are usually: sauce
+    on the bottom, then vegetables or meat, then sauce on top. The crust is fried and flaky. Some
+    people eat Chicago deep-dish pizza with a fork and knife because it's so bulky and messy.
 
 - name: Chicago thin-crust
-
-- name: Classic Italian
+  description: >
+    Chicago thin-crust style pizza (also known as "tavern style") is a thin-crust pizza that
+    supposedly pre-dates Chicago deep-dish pizza, which is more famous. Dough for the pizza is
+    rolled instead of tossed. The pizza is cooked until the crust is crispy and crunchy. Instead of
+    triangle slices the pizza is cut into smaller squares -- good for sharing a single pie with
+    more people.
 
 - name: Detroit
+  description: >
+    Detroit style pizza is a rectangle shaped pizza that is baked in a steel pan. Wisconsin brick
+    cheese is spread across the top of the tomato sauce all the way to the edge of the pan so that
+    cheese drips down the sides and caramelizes as it cooks. This gives Detroit pizza a distinct
+    crispy and chewy edge. Traditional Detroit style pizzas are made with the toppings in
+    reverse order: cheese on the bottom, then meat and vegetables, then sauce on top; however
+    Detroit pizza uses much less sauce that other styles of pizza so it may have a more typical
+    cheesy pizza look or may look very saucy like Chicago deep-dish pizza.
 
 - name: Grandma
+  description: >
+    Grandma pizza (or "Grandma pie") is a rectangle shaped pizza with a thin crust. Grandma pizza
+    is originally from Long Island, New York and was traditionally made at home in half-sheet pan
+    in a regular home oven. Toppings are reversed: cheese is placed on the dough first then sauce
+    on top of the cheese. Similar looking to Sicilian style pizza.
 
 - name: Greek
-
-- name: Grilled
+  description: >
+    Greek style pizza is a thin-crust pizza that is cooked in a shallow metal pan heavily coated
+    with olive oil. The crust is a chewy texture similar to focaccia bread but more oily and less
+    thick. (Note: currently I don't know any places serving Greek pizza in San Francisco).
 
 - name: Neapolitan
-  description: |
+  description: >
     A style of pizza from Naples, Italy. The tomatoes used must be San Marzano or Pomodorino del
     Piennolo del Vesuvio. Cooked in a wood-fired oven at about 900 °F.
   image: amirali-mirhashemian-Neapolitan-zTxiTnTag78-unsplash.jpg
 
 - name: New Haven
+  description:
 
 - name: New York
+  description:
 
 - name: Ohio Valley
+  description:
 
 - name: Old Forge
+  description:
 
 - name: Pan
+  description:
 
 - name: Pinsa
+  description:
 
 - name: Quad City
+  description:
 
 - name: Romana
+  description:
 
 - name: Sheet
+  description:
 
 - name: Sicilian
+  description:
 
 - name: St. Louis
+  description:
 
 - name: Stuffed
+  description:
 
-- name: Tomato pie
+- name: Italian tomato pie
+  description:
 
 - name: Trenton tomato pie
-
-- name: Upside-down
+  description:
