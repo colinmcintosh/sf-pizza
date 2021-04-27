@@ -41,6 +41,8 @@ neighborhoods:
     name: Russian Hill
   soma:
     name: South of Market (SoMa)
+  west_of_twin_peaks:
+    name: West of Twin Peaks
   western_addition:
     name: Western Addition
   multiple:
@@ -232,6 +234,20 @@ places:
     maps: https://goo.gl/maps/BKQwAxm8qFCiYnDc6
     website: https://marcellospizza420.com/
 
+  - name: Montesacro Pinseria
+    neighborhood: soma
+    style:
+      - Pinsa
+    maps: https://www.google.com/maps/place/MONTESACRO+San+Francisco/@37.7818222,-122.4122165,17z/data=!3m1!4b1!4m5!3m4!1s0x80858084f9babd2f:0xa0a7291deb809760!8m2!3d37.7819848!4d-122.4103377
+    website: https://www.montesacropinseria.com/san-francisco
+
+  - name: Monza Pizzeria
+    neighborhood: west_of_twin_peaks
+    style:
+      - California
+    maps: https://goo.gl/maps/Se7VhSeHDnNFkxv79
+    website: https://www.monzasf.com/
+
   - name: Nizario's
     neighborhood: multiple
     style:
@@ -253,6 +269,13 @@ places:
       - Chicago thin-crust
     maps:
     website: https://patxispizza.com/
+
+  - name: Piccino
+    neighborhood: dogpatch
+    style:
+      - Neapolitan
+    maps: https://www.google.com/maps/place/Piccino/@37.7575756,-122.392152,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fb9f9f92d67:0x81848b9f3ed21b04!8m2!3d37.7575668!4d-122.3900567
+    website: https://www.piccino.com/
 
   - name: Pink Onion
     neighborhood: mission
@@ -303,6 +326,13 @@ places:
       - Neapolitan
     maps: https://goo.gl/maps/1sHTp7gQAf6fyxFm9
     website: https://www.presidiopizzacompany.com/
+
+  - name: Ragazza
+    neighborhood: haight_ashbury
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/LmvWWNEHMsEJtHzdA
+    website: https://www.ragazzasf.com/
 
   - name: Seniore's
     neighborhood: parkside
@@ -413,9 +443,6 @@ todo:
   - Flour+Water
   - Jersey
   - Little Star
-  - Montecristo Pinseria
-  - Monza
   - Pazzia
-  - Piccino
-  - Ragazza
+
 

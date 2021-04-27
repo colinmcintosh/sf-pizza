@@ -50,10 +50,16 @@
   image: amirali-mirhashemian-Neapolitan-zTxiTnTag78-unsplash.jpg
 
 - name: New Haven
-  description:
+  description: >
+    New Haven style pizza is a thin-crust coal-fired Neapolitan pizza. Common around New Haven,
+    Connecticut and can be found around the New England and New York area.
 
 - name: New York
-  description:
+  description: >
+    New York style pizza is a thin-crust pizza made with hand-tossed dough. Originally from New
+    York City and the most common style of pizza found around New York, New Jersey, and other east
+    coast states. Pie size varies but are typically circle and cut into eight triangle slices.
+    Slices are often folded over lengthwise and eaten one-handed.
 
 - name: Ohio Valley
   description:
@@ -65,12 +71,12 @@
   description:
 
 - name: Pinsa
-  description:
+  description: >
+    A pinsa (also known as a "romana" or "pinsa romana") is a Roman style pizza flatbread. Usually
+    in an oval shape and cut squarely. Pinsas are doughy but still have light and airy bubbled
+    crust.
 
 - name: Quad City
-  description:
-
-- name: Romana
   description:
 
 - name: Sheet
