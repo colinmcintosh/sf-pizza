@@ -116,12 +116,54 @@ places:
     maps: https://goo.gl/maps/8Awn9ricfCqPntBv9
     website: https://www.delpopolosf.com/
 
+  - name: Delarosa
+    neighborhood: financial_district
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/bC4AfSAEgh3yanFy6
+    website: https://www.delarosasf.com/food-downtown/
+
+  - name: Delarosa
+    neighborhood: marina
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/KQwSZzP8FxhDrkw69
+    website: https://www.delarosasf.com/food-downtown/
+
+  - name: Delfina
+    neighborhood: financial_district
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/Y89Bjex4mxvzkJTY6
+    website: https://www.pizzeriadelfina.com/location/downtown/
+
+  - name: Delfina
+    neighborhood: mission
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/rjCvP95X65SjWmxJ8
+    website: https://www.pizzeriadelfina.com/location/mission-district/
+
+  - name: Delfina
+    neighborhood: pacific_heights
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/LoAvi3qKdXmehTKv5
+    website: https://www.pizzeriadelfina.com/location/pacific-heights/
+
   - name: DNA Pizza
     neighborhood: soma
     style:
       - New York
     maps: https://www.google.com/maps/place/DNA+Pizza/@37.7711576,-122.4149159,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e262791ac3d:0xf90758c191f7e9ce!8m2!3d37.771064!4d-122.4128171
     website: https://www.dnapizza.com/
+
+  - name: Doppio Zero
+    neighborhood: civic_center
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/WchM87ArXUCp4wQy8
+    website: https://www.dzpizzeria.com/san-francisco
 
   - name: Escape From New York Pizza
     neighborhood: financial_district
@@ -437,9 +479,6 @@ places:
 
 todo:
   - Casey’s
-  - Delarosa
-  - Delfina
-  - Doppio Zero
   - Flour+Water
   - Jersey
   - Little Star
