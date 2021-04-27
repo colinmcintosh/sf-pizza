@@ -1,3 +1,5 @@
+title: SF Pizza
+tagline: List of pizza places in San Francisco
 plugins:
   - jekyll-relative-links
   - jekyll-readme-index
@@ -7,5 +9,6 @@ relative_links:
 include:
   - LICENSE
   - README.md
+  - TYPES_OF_PIZZA.md.liquid
 theme: jekyll-theme-primer
 google_analytics: G-Z0K2FPDNK7

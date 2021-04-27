@@ -1,0 +1,56 @@
+- name: California
+  description: A thin-crust style of pizza that combines elements of many other styles of pizza.
+    Topping are typically the same ingredients found in Californian cuisine such as artichoke,
+    goat cheese, kale, beets, and nuts. California style pizza also usually has a low or no lip and
+    topping will go nearly to the edge.
+  image: chad-montano-California-MqT0asuoIcU-unsplash.jpg
+
+- name: Chicago deep-dish
+
+- name: Chicago thin-crust
+
+- name: Classic Italian
+
+- name: Detroit
+
+- name: Grandma
+
+- name: Greek
+
+- name: Grilled
+
+- name: Neapolitan
+  description: |
+    A style of pizza from Naples, Italy. The tomatoes used must be San Marzano or Pomodorino del
+    Piennolo del Vesuvio. Cooked in a wood-fired oven at about 900 °F.
+  image: amirali-mirhashemian-Neapolitan-zTxiTnTag78-unsplash.jpg
+
+- name: New Haven
+
+- name: New York
+
+- name: Ohio Valley
+
+- name: Old Forge
+
+- name: Pan
+
+- name: Pinsa
+
+- name: Quad City
+
+- name: Romana
+
+- name: Sheet
+
+- name: Sicilian
+
+- name: St. Louis
+
+- name: Stuffed
+
+- name: Tomato pie
+
+- name: Trenton tomato pie
+
+- name: Upside-down

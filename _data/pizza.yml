@@ -1,0 +1,325 @@
+neighborhoods:
+  bernal_heights:
+    name: Bernal Heights
+  castro:
+    name: Castro/Upper Market
+  civic_center:
+    name: Civic Center
+  financial_district:
+    name: Financial District
+  glen_park:
+    name: Glen Park
+  haight_ashbury:
+    name: Haight Ashbury
+  inner_sunset:
+    name: Inner Sunset
+  marina:
+    name: Marina
+  mission:
+    name: Mission
+  nob_hill:
+    name: Nob Hill
+  noe_valley:
+    name: Noe Valley
+  north_beach:
+    name: North Beach
+  ocean_view:
+    name: Ocean View
+  outer_mission:
+    name: Outer Mission
+  outer_richmond:
+    name: Outer Richmond
+  outer_sunset:
+    name: Outer Sunset
+  russian_hill:
+    name: Russian Hill
+  soma:
+    name: South of Market (SoMa)
+  western_addition:
+    name: Western Addition
+  multiple:
+    name: Multiple Locations
+
+footnotes:
+  1: Golden Boy Pizza founder Peter Sodini calls his pizza “Sanfrancilian.”
+  2: Checkout the Honorable Mention review of Serrano's by J. Kenji López-Alt [here](https://www.seriouseats.com/2015/01/the-best-pizza-by-the-slice-san-francisco-oakland-berkeley.html)
+
+places:
+  - name: Arinell
+    neighborhood: mission
+    style:
+      - New York
+    maps: https://goo.gl/maps/cohQ5tcHeavBG1js6
+    website: https://www.arinellpizza.net/
+
+  - name: Arizmendi Bakery
+    neighborhood: inner_sunset
+    style:
+      - California
+    maps: https://g.page/Arizmendi9thAve
+    website: https://www.arizmendibakery.com/
+
+  - name: Arizmendi Bakery
+    neighborhood: mission
+    style:
+      - California
+    maps: https://goo.gl/maps/V6ZSyN4z4qztzuB49
+    website: https://www.arizmendibakery.com/
+
+  - name: Avellino
+    neighborhood: marina
+    style:
+      - New York
+    maps: https://goo.gl/maps/HSpPbZfeskZFTkEn6
+    website: https://orderpizzeriaavellino.com/
+
+  - name: Beretta
+    neighborhood: mission
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/1MZ2jcmTvUHjtsjs5
+    website: https://berettasf.com/
+
+  - name: Cellarmaker House of Pizza
+    neighborhood: bernal_heights
+    style:
+      - Detroit
+    maps: https://g.page/cellarmakerhouseofpizza
+    website: https://cellarmakerbrewing.com/house-of-pizza/
+
+  - name: Capo's
+    neighborhood: russian_hill
+    style:
+      - Chicago deep-dish
+      - Chicago thin-crust
+      - Detriot
+      - Stuffed
+      - Pan
+    maps: https://goo.gl/maps/HZ4Wgrkh6nqWT89Q7
+    website: https://www.sfcapos.com/
+
+  - name: Del Popolo
+    neighborhood: civic_center
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/8Awn9ricfCqPntBv9
+    website: https://www.delpopolosf.com/
+
+  - name: DNA Pizza
+    neighborhood: soma
+    style:
+      - New York
+    maps: https://g.page/dnapizza
+    website: https://www.dnapizza.com/
+
+  - name: Escape From New York Pizza
+    neighborhood: financial_district
+    style:
+      - New York
+    maps: https://goo.gl/maps/GMmtSt6frhBcB5nA8
+    website: https://escapefromnewyorkpizza.com/home/downtown/
+
+  - name: Escape From New York Pizza
+    neighborhood: haight_ashbury
+    style:
+      - New York
+    maps: https://goo.gl/maps/dqMVCk1JGXsJbaJU8
+    website: https://escapefromnewyorkpizza.com/home/haight/
+
+  - name: Escape From New York Pizza
+    neighborhood: soma
+    style:
+      - New York
+    maps: https://goo.gl/maps/KEJxmnbYgGTg7bi76
+    website: https://escapefromnewyorkpizza.com/home/soma/
+
+  - name: Extreme Pizza
+    neighborhood: multiple
+    style:
+      - ?????
+    maps:
+    website: https://www.extremepizza.com/
+
+  - name: Fiorella
+    neighborhood: outer_richmond
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/9BD3t4LxicJHbDdVA
+    website: https://www.fiorella-sf.com/
+
+  - name: Fiorella
+    neighborhood: russian_hill
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/xaq1WoaNLHyLeGZ67
+    website: https://www.fiorella-sf.com/
+
+  - name: Gialina
+    neighborhood: glen_park
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/nJ59gpEbn1MUXyvd7
+    website: https://www.gialina.com/
+
+  - name: Golden Boy
+    neighborhood: north_beach
+    style:
+      - Sicilian[^1]
+    maps: https://goo.gl/maps/avUgHrEfm2kXAG4y7
+    website: http://www.goldenboypizza.com/
+
+  - name: Marcello's
+    neighborhood: castro
+    style:
+      - New York
+    maps: https://goo.gl/maps/BKQwAxm8qFCiYnDc6
+    website: https://marcellospizza420.com/
+
+  - name: Nizario's
+    neighborhood: multiple
+    style:
+      -
+    maps:
+    website: http://nizarios.com/
+
+  - name: Oz
+    neighborhood: castro
+    style:
+      - New York
+    maps: https://g.page/ozpizzasf
+    website: https://www.ozpizzasf.com/
+
+  - name: Patxi's
+    neighborhood: multiple
+    style:
+      - Chicago deep-dish
+      - Chicago thin-crust
+    maps:
+    website: https://patxispizza.com/
+
+  - name: Pizza Squared
+    neighborhood: soma
+    style:
+      - Detroit
+    maps: https://goo.gl/maps/gXvAynuDZEWykKjy7
+    website: https://www.pizzasquaredsf.com/
+
+  - name: The Pizza Place on Noriega
+    neighborhood: outer_sunset
+    style:
+      - New York
+    maps: https://goo.gl/maps/Nyx7hZh5evm9vmtR7
+    website: https://pizzaplacesf.com/
+
+  - name: The Pizza Shop
+    neighborhood: mission
+    style:
+      - New York
+    maps: https://goo.gl/maps/Sxrs5kXtj7keK6zW6
+    website: https://www.facebook.com/thepizzashopsf/
+
+  - name: The Presidio Pizza Company
+    neighborhood: western_addition
+    style:
+      - Grandma
+      - Neapolitan
+    maps: https://goo.gl/maps/1sHTp7gQAf6fyxFm9
+    website: https://www.presidiopizzacompany.com/
+
+  - name: Serrano's
+    neighborhood: mission
+    style:
+      - Unknown[^2]
+    maps: https://g.page/serranos21st
+    website: https://www.serranospizzasanfran.com/
+
+  - name: Slice House
+    neighborhood: haight_ashbury
+    style:
+      - New York
+    maps: https://goo.gl/maps/iHXDBCZ5nt8bz16k9
+    website: https://slicehousehaight.com/
+
+  - name: Sunset Squares
+    neighborhood: soma
+    style:
+      - Detroit
+    maps: https://g.page/sunset-squares-pizza
+    website: https://www.sunsetsquares.com/
+
+  - name: Tommaso's Ristorante Italiano
+    neighborhood: financial_district
+    style:
+      - Neapolitan
+    maps: https://g.page/tommasos_sf
+    website: https://tommasos.com/
+
+  - name: Tony’s Coal Fired Pizza & Slice House
+    neighborhood: north_beach
+    style:
+      - New York
+      - New Haven
+      - Sicilian
+      - Grandma
+      - Detriot
+      - Chicago deep-dish
+    maps: https://goo.gl/maps/ges5rKo59a7tHNas5
+    website: https://tonyscoalfired.com/
+
+  - name: Tony's Pizza Napoletana
+    neighborhood: north_beach
+    style:
+      - Neapolitan
+      - California
+      - Classic Italian
+      - New York
+      - Romana
+      - Grandma
+      - Sicilian
+      - New Haven
+      - St. Louis
+      - Detroit
+      - Trenton tomato pie
+    maps: https://goo.gl/maps/6mGuevmBNS6yizTT8
+    website: https://tonyspizzanapoletana.com/
+
+  - name: Tony's Slice House at The Market
+    neighborhood: soma
+    style:
+      - New York
+    maps: https://goo.gl/maps/D5R5VKFHG4d7bZtA7
+    website: https://visitthemarket.com/department/slice-house/
+
+  - name: Za Pizza
+    neighborhood: russian_hill
+    style:
+      - New York
+    maps: https://goo.gl/maps/n4aQjVAwi9B3AfbP9
+    website: https://zapizzasf.com/
+
+
+todo:
+  - Bernal Heights Pizza
+  - Casey’s
+  - Delarosa
+  - Delfina
+  - Doppio Zero
+  - Flour+Water
+  - Gabriellas
+  - Giorgios
+  - Il Casaro
+  - Jersey
+  - Little Star
+  - Long Bridge Pizza
+  - Gioia
+  - Montecristo Pinseria
+  - Monza
+  - Pazzia
+  - Piccino
+  - Pink onion
+  - Pizza hacker
+  - pizzetta 211
+  - Ragazza
+  - seniores
+  - Windy City Pizza
+  - Zero-Zero

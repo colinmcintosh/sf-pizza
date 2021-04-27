@@ -1,2 +1,2 @@
-The favicon is redistributed from https://github.com/Templarian/MaterialDesign which is
-licensed under the Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0) license.
+The favicon is redistributed from [Twemoji](https://twemoji.twitter.com/) which is licensed under
+the [CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/).
