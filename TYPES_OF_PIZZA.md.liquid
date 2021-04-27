@@ -12,6 +12,8 @@
 {% if t.image %}
 ![{{ t.name }}]({{ '/assets/images/' | append: t.image | relative_url }})
 {% endif %}
+{% unless forloop.last %}
 ---
+{% endunless %}
 {% endif %}
 {% endfor %}
