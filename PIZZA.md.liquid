@@ -20,6 +20,8 @@ Add your suggestions, corrections, and changes [on GitHub](https://github.com/co
 
 ## By Neighborhood
 
+{% assign last_neighborhood = site.data.pizza.neighborhoods | last %}
+{{ last_neighborhood }}
 {% for neighborhood in site.data.pizza.neighborhoods %}
 
 {% assign places = site.data.pizza.places | where: "neighborhood", neighborhood[0] %}
@@ -34,14 +36,14 @@ Add your suggestions, corrections, and changes [on GitHub](https://github.com/co
 - 🍕 **Style:** {{ place.style | join: ", " }}
 {%- if place.maps %}
 - 📍 [Google Maps]({{ place.maps }})
-
+{% endif -%}
+{% if place.details -%}
+- 📝**Details:** {{ place.details }}
 {% endif %}
 
 {% endfor %}
+{% unless forloop.last %}
 ---
+{% endunless %}
 {% endif %}
-{% endfor %}
-
-{% for note in site.data.pizza.footnotes %}
-[^{{ note[0] }}]: {{ note[1] }}
 {% endfor %}

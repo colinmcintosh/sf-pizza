@@ -5,12 +5,16 @@ neighborhoods:
     name: Castro/Upper Market
   civic_center:
     name: Civic Center
+  dogpatch:
+    name: Dogpatch
   financial_district:
     name: Financial District
   glen_park:
     name: Glen Park
   haight_ashbury:
     name: Haight Ashbury
+  inner_richmond:
+    name: Inner Richmond
   inner_sunset:
     name: Inner Sunset
   marina:
@@ -31,6 +35,8 @@ neighborhoods:
     name: Outer Richmond
   outer_sunset:
     name: Outer Sunset
+  parkside:
+    name: Parkside
   russian_hill:
     name: Russian Hill
   soma:
@@ -39,10 +45,6 @@ neighborhoods:
     name: Western Addition
   multiple:
     name: Multiple Locations
-
-footnotes:
-  1: Golden Boy Pizza founder Peter Sodini calls his pizza “Sanfrancilian.”
-  2: Checkout the Honorable Mention review of Serrano's by J. Kenji López-Alt [here](https://www.seriouseats.com/2015/01/the-best-pizza-by-the-slice-san-francisco-oakland-berkeley.html)
 
 places:
   - name: Arinell
@@ -56,7 +58,7 @@ places:
     neighborhood: inner_sunset
     style:
       - California
-    maps: https://g.page/Arizmendi9thAve
+    maps: https://www.google.com/maps/place/Arizmendi+Bakery/@37.763405,-122.4686303,17z/data=!3m1!4b1!4m5!3m4!1s0x8085875c351fd531:0xbd0bd910a2c29bee!8m2!3d37.763405!4d-122.4664416
     website: https://www.arizmendibakery.com/
 
   - name: Arizmendi Bakery
@@ -80,12 +82,12 @@ places:
     maps: https://goo.gl/maps/1MZ2jcmTvUHjtsjs5
     website: https://berettasf.com/
 
-  - name: Cellarmaker House of Pizza
-    neighborhood: bernal_heights
+  - name: Bernal Heights Pizzeria
+    neighborhood: noe_valley
     style:
-      - Detroit
-    maps: https://maps.google.com/place/Cellarmaker+House+of+Pizza/@37.7457465,-122.4217815,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fe2326ae731:0xf88cab31c19dc344!8m2!3d37.7457572!4d-122.4196337
-    website: https://cellarmakerbrewing.com/house-of-pizza/
+      - California
+    maps: https://goo.gl/maps/PbaU8NcyMhNLwMrP8
+    website: https://www.bernalheightspizzeria.com/
 
   - name: Capo's
     neighborhood: russian_hill
@@ -98,6 +100,13 @@ places:
     maps: https://goo.gl/maps/HZ4Wgrkh6nqWT89Q7
     website: https://www.sfcapos.com/
 
+  - name: Cellarmaker House of Pizza
+    neighborhood: bernal_heights
+    style:
+      - Detroit
+    maps: https://maps.google.com/place/Cellarmaker+House+of+Pizza/@37.7457465,-122.4217815,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fe2326ae731:0xf88cab31c19dc344!8m2!3d37.7457572!4d-122.4196337
+    website: https://cellarmakerbrewing.com/house-of-pizza/
+
   - name: Del Popolo
     neighborhood: civic_center
     style:
@@ -109,7 +118,7 @@ places:
     neighborhood: soma
     style:
       - New York
-    maps: https://g.page/dnapizza
+    maps: https://www.google.com/maps/place/DNA+Pizza/@37.7711576,-122.4149159,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e262791ac3d:0xf90758c191f7e9ce!8m2!3d37.771064!4d-122.4128171
     website: https://www.dnapizza.com/
 
   - name: Escape From New York Pizza
@@ -154,6 +163,13 @@ places:
     maps: https://goo.gl/maps/xaq1WoaNLHyLeGZ67
     website: https://www.fiorella-sf.com/
 
+  - name: Gabriella's
+    neighborhood: mission
+    style:
+      - New York
+    maps: https://goo.gl/maps/b6iivuXgPMfcgtHv9
+    website: https://www.gabriellasofny.com/
+
   - name: Gialina
     neighborhood: glen_park
     style:
@@ -161,12 +177,53 @@ places:
     maps: https://goo.gl/maps/nJ59gpEbn1MUXyvd7
     website: https://www.gialina.com/
 
+  - name: Gioia
+    neighborhood: western_addition
+    style:
+      - New York/California
+    maps: https://goo.gl/maps/bHd8Mh5EQSz7SXqr5
+    website: https://www.gioiapizzeria.com/
+    details: >
+      Gioia calls themselves a New York style pizzeria but their toppings and seasonal
+      ingredients makes their pizza closer to California style so I've listed both but they only
+      sell one kind of pizza.
+
+  - name: Giorgio's
+    neighborhood: inner_richmond
+    style:
+      - New York
+    maps: https://goo.gl/maps/rGNDtb35wSfzPhzw9
+    website: https://www.giorgiospizza.com/
+
   - name: Golden Boy
     neighborhood: north_beach
     style:
-      - Sicilian[^1]
+      - Sicilian
     maps: https://goo.gl/maps/avUgHrEfm2kXAG4y7
     website: http://www.goldenboypizza.com/
+    details: Golden Boy Pizza founder Peter Sodini calls his pizza “Sanfrancilian”.
+
+  - name: Il Casaro Pizzeria
+    neighborhood: castro
+    style:
+      - Neapolitan
+    maps: https://www.google.com/maps/place/IL+Casaro+Pizzeria+%26+Mozzarella+Bar+-+Castro+Locations/@37.7669344,-122.4308417,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7f490a5124d5:0x5eb8335ce369c4bf!8m2!3d37.7669344!4d-122.428653
+    website: https://www.ilcasaropizzeria.com/
+
+  - name: Il Casaro Pizzeria
+    neighborhood: north_beach
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/WE5qBb7T6YaCmCvt6
+    website: https://www.ilcasaropizzeria.com/
+
+  - name: Long Bridge
+    neighborhood: dogpatch
+    style:
+      - New York
+      - Sicilian
+    maps: https://www.google.com/maps/place/Long+Bridge+Pizza+Co./@37.7594917,-122.390372,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fb9bbc9c65f:0xb3389a5cb56e6fcb!8m2!3d37.7594917!4d-122.3881833
+    website: https://www.longbridgepizza.com/
 
   - name: Marcello's
     neighborhood: castro
@@ -186,7 +243,7 @@ places:
     neighborhood: castro
     style:
       - New York
-    maps: https://g.page/ozpizzasf
+    maps: https://www.google.com/maps/place/Oz+Pizza/@37.760639,-122.4373389,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e1b2d95931d:0x9503a811765053cd!8m2!3d37.760639!4d-122.4351502
     website: https://www.ozpizzasf.com/
 
   - name: Patxi's
@@ -196,6 +253,13 @@ places:
       - Chicago thin-crust
     maps:
     website: https://patxispizza.com/
+
+  - name: Pink Onion
+    neighborhood: mission
+    style:
+      - Neapolitan
+    maps: https://goo.gl/maps/XeSg4Xi8uWAuDmUcA
+    website: https://www.pinkonionpizza.com/
 
   - name: Pizza Squared
     neighborhood: soma
@@ -218,6 +282,20 @@ places:
     maps: https://goo.gl/maps/Sxrs5kXtj7keK6zW6
     website: https://www.facebook.com/thepizzashopsf/
 
+  - name: PizzaHacker
+    neighborhood: bernal_heights
+    style:
+      - Neapolitan
+    maps: https://www.google.com/maps/place/PizzaHacker/@37.7441361,-122.4228359,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e3b557bdc4f:0x253d67a274e49fac!8m2!3d37.7441398!4d-122.4206768
+    website: https://thepizzahacker.com/
+
+  - name: Pizzetta 211
+    neighborhood: outer_richmond
+    style:
+      - California
+    maps: https://goo.gl/maps/hFX4UoGm2DF1RrLY8
+    website: https://www.pizzetta211.com/
+
   - name: The Presidio Pizza Company
     neighborhood: western_addition
     style:
@@ -226,12 +304,36 @@ places:
     maps: https://goo.gl/maps/1sHTp7gQAf6fyxFm9
     website: https://www.presidiopizzacompany.com/
 
+  - name: Seniore's
+    neighborhood: parkside
+    style:
+      - California
+    maps: https://goo.gl/maps/QNvTfy7zBxqYSAVw8
+    website: https://seniorespizza.com/
+
+  - name: Seniore's
+    neighborhood: soma
+    style:
+      - California
+    maps: https://goo.gl/maps/KsoCQM9XiTcBkXCN9
+    website: https://www.orderseniorespizza.com/
+
+  - name: Seniore's
+    neighborhood: western_addition
+    style:
+      - California
+    maps: https://goo.gl/maps/1ww5F6zW1RpMmtcL8
+    website: https://www.seniorespizzasanfranscico.com/
+
   - name: Serrano's
     neighborhood: mission
     style:
-      - Unknown[^2]
-    maps: https://g.page/serranos21st
+      - Unknown
+    maps: https://www.google.com/maps/place/Serrano's+Pizza+and+Pasta/@37.757099,-122.4227997,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e3e84c45f33:0x8b0c7dd057d9a559!8m2!3d37.757099!4d-122.420611
     website: https://www.serranospizzasanfran.com/
+    details: >
+      Checkout the Honorable Mention review of Serrano's by J. Kenji López-Alt
+      [here](https://www.seriouseats.com/2015/01/the-best-pizza-by-the-slice-san-francisco-oakland-berkeley.html).
 
   - name: Slice House
     neighborhood: haight_ashbury
@@ -244,14 +346,14 @@ places:
     neighborhood: soma
     style:
       - Detroit
-    maps: https://g.page/sunset-squares-pizza
+    maps: https://www.google.com/maps/place/Sunset+Squares+Pizza/@37.7768524,-122.4173214,17z/data=!3m1!4b1!4m5!3m4!1s0x8085817fb2742cf9:0x6c3bd4acbc1fe7d8!8m2!3d37.7768524!4d-122.4151327
     website: https://www.sunsetsquares.com/
 
   - name: Tommaso's Ristorante Italiano
     neighborhood: financial_district
     style:
       - Neapolitan
-    maps: https://g.page/tommasos_sf
+    maps: https://www.google.com/maps/place/Tommaso's+Ristorante+Italiano/@37.7977991,-122.4074307,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f4f5dcee0f:0x1644bad7e172b83b!8m2!3d37.7977796!4d-122.405342
     website: https://tommasos.com/
 
   - name: Tony’s Coal Fired Pizza & Slice House
@@ -296,29 +398,24 @@ places:
     maps: https://goo.gl/maps/n4aQjVAwi9B3AfbP9
     website: https://zapizzasf.com/
 
+  - name: Zero Zero
+    neighborhood: soma
+    style:
+      - California
+    maps: https://www.google.com/maps/place/Zero+Zero/@37.7816365,-122.4042717,17z/data=!3m1!4b1!4m5!3m4!1s0x80858080a56c5bf9:0xaa7b722e8344d9d4!8m2!3d37.7816365!4d-122.402083
+    website: https://zerozerosf.com/
 
 todo:
-  - Bernal Heights Pizza
   - Casey’s
   - Delarosa
   - Delfina
   - Doppio Zero
   - Flour+Water
-  - Gabriellas
-  - Giorgios
-  - Il Casaro
   - Jersey
   - Little Star
-  - Long Bridge Pizza
-  - Gioia
   - Montecristo Pinseria
   - Monza
   - Pazzia
   - Piccino
-  - Pink onion
-  - Pizza hacker
-  - pizzetta 211
   - Ragazza
-  - seniores
-  - Windy City Pizza
-  - Zero-Zero
+
