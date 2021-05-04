@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>SF Pizza | List of pizza places in San Francisco</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="SF Pizza" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="List of pizza places in San Francisco" />
+<meta property="og:description" content="List of pizza places in San Francisco" />
+<meta property="og:site_name" content="SF Pizza" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SF Pizza" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"/","headline":"SF Pizza","description":"List of pizza places in San Francisco","name":"SF Pizza","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta content="#ffffff" name="theme-color">
+    <link href="/assets/images/pizza.svg" rel="shortcut icon" type="image/x-icon">
+    <link color="#000000" href="/assets/images/pizza.svg" rel="mask-icon">
+    <link href="/assets/images/pizza.svg" rel="apple-touch-icon">
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=4f14f7fc99061d24975b4067e480b12e13657fd0">
+<script type='text/javascript'>
+  /* global google */
+/* global MarkerClusterer */
+// eslint-disable-next-line no-unused-vars
+var jekyllMaps = (function() {
+  'use strict'
+  var clusterSettings = {}
+  var clusterReady = false
+  var mapReady = false
+  var options = {}
+  var data = []
+  var maps = []
+
+  return {
+    initializeMap: initializeMap,
+    initializeCluster: initializeCluster,
+    register: register
+  }
+
+  /**
+   * Setup Google Maps options and call renderer.
+   */
+  function initializeMap() {
+    options = {
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: new google.maps.LatLng(0, 0),
+      styles: []
+    }
+    mapReady = true
+    render()
+  }
+
+  /**
+   * Register map data to be rendered once Google Maps API is loaded.
+   *
+   * @param string id
+   * @param Array locations
+   * @param Object settings
+   */
+  function register(id, locations, options) {
+    data.push({ id: id, locations: locations, options: options })
+    render()
+  }
+
+  /**
+   * Render maps data if Google Maps API is loaded.
+   */
+  function render() {
+    if (!mapReady) return
+
+    while (data.length > 0) {
+      var item = data.pop()
+      var bounds = new google.maps.LatLngBounds()
+      var mapOptions = Object.assign({}, options, item.options)
+      var map = new google.maps.Map(
+        document.getElementById(item.id),
+        mapOptions
+      )
+      var infoWindow = new google.maps.InfoWindow()
+      var markers = item.locations.map(createMarker)
+
+      map.fitBounds(bounds)
+      google.maps.event.addListenerOnce(map, 'idle', function() {
+        if (this.customZoom) this.setZoom(this.customZoom)
+      })
+      if (mapOptions.useCluster) {
+        maps.push({ map: map, markers: markers })
+        processCluster()
+      }
+    }
+
+    function createMarker(location) {
+      var position = new google.maps.LatLng(
+        location.latitude,
+        location.longitude
+      )
+      bounds.extend(position)
+      if (!mapOptions.showMarker) return false
+
+      var marker = new google.maps.Marker({
+        position: position,
+        title: location.title,
+        image: location.image,
+        popup_html: location.popup_html,
+        icon: location.icon || mapOptions.markerIcon,
+        url: markerUrl(mapOptions.baseUrl, location.url),
+        url_text: location.url_text,
+        map: map
+      })
+      if (mapOptions.showMarkerPopup) marker.addListener('click', markerPopup)
+
+      return marker
+    }
+
+    function markerUrl(baseUrl, url) {
+      if (/^(https?|\/\/)/.test(url)) return url
+
+      return url.length > 0 ? baseUrl + url : ''
+    }
+
+    function markerPopup() {
+      var content = '<div class="map-info-window"><h5>' + this.title + '</h5>'
+      if (this.popup_html.length > 0) {
+        content += this.popup_html
+      }
+      else {
+        var imageTag =
+          this.image.length > 0 &&
+          '<img src="' + this.image + '" alt="' + this.title + '"/>'
+        if (this.url.length > 0) {
+          var linkContent = imageTag || this.url_text || 'View'
+          content += '<a href="' + this.url + '">' + linkContent + '</a>'
+        } else if (imageTag) {
+          content += imageTag
+        }
+      }
+      content += '</div>'
+      infoWindow.setContent(content)
+      infoWindow.open(map, this)
+    }
+  }
+
+  function initializeCluster(settings) {
+    clusterReady = true
+    clusterSettings = settings || {}
+    processCluster()
+  }
+
+  function processCluster() {
+    if (!clusterReady) return
+
+    while (maps.length > 0) {
+      var obj = maps.pop()
+      // eslint-disable-next-line no-new
+      new MarkerClusterer(obj.map, obj.markers, {
+        gridSize: clusterSettings.grid_size || 25,
+        imagePath:
+          'https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/images/m'
+      })
+    }
+  }
+})()
+/* Object.assign polyfill */
+if (typeof Object.assign !== 'function') {
+  Object.assign = function(target) {
+    'use strict'
+    if (target == null) {
+      throw new TypeError('Cannot convert undefined or null to object')
+    }
+
+    target = Object(target)
+    for (var index = 1; index < arguments.length; index++) {
+      var source = arguments[index]
+      if (source != null) {
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key]
+          }
+        }
+      }
+    }
+    return target
+  }
+}
+
+</script>
+</head>
+<body>
+<div class="container-md px-3 my-5 markdown-body">
+
+    <h1 id="san-francisco-pizza"><a href="/">San Francisco Pizza</a></h1>
+
+<p>A list of pizza places in San Francisco, California.</p>
+
+<p>This is meant to be a comprehensive and neutral list of pizza that can be found in San Francisco. Pizza places are
+listed by neighborhood. Neighorhoods listed below are using the
+borders <a href="https://sfplanninggis.org/neighborhoodorganizations/">used by the SF Planning Department</a>. This
+is not the most comprehensive neighborhood list but was sufficient for use here. If a restaurant has more than 3
+locations it’s listed at the bottom in
+<a href="#multiple-locations">Multiple Locations</a> section.</p>
+
+<p>Be sure to check the <a href="/types-of-pizza/"><strong>Types of Pizza</strong></a> page for an explanation of each style
+of pizza.</p>
+
+<p>⚠️This is still a work in progress⚠️</p>
+
+<p>Add your suggestions, corrections, and changes <a href="https://github.com/colinmcintosh/sf-pizza">on GitHub</a>!</p>
+
+<p><img src="assets/images/amirali-mirhashemian-Banner-w1iMfs6yxuo-unsplash.jpg" alt="Pizza!" /></p>
+
+<h2 id="map">Map</h2>
+
+<div id="750be015-d09d-4002-982c-8cd4a36c87d3" style="width:100%;height:400px;" class=" jekyll-map"></div>
+<script type="text/javascript">
+  jekyllMaps.register(
+    '750be015-d09d-4002-982c-8cd4a36c87d3',
+    [{"latitude":37.76467959999999,"longitude":-122.4216689,"title":"Arinell","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.763405,"longitude":-122.4664416,"title":"Arizmendi Bakery","icon":null,"url":"#inner-sunset","url_text":null,"image":"","popup_html":""},{"latitude":37.7525761,"longitude":-122.4209225,"title":"Arizmendi Bakery","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.7984,"longitude":-122.4470333,"title":"Avellino","icon":null,"url":"#marina","url_text":null,"image":"","popup_html":""},{"latitude":37.7538556,"longitude":-122.4206327,"title":"Beretta","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.749056,"longitude":-122.4269602,"title":"Bernal Heights Pizzeria","icon":null,"url":"#noe-valley","url_text":null,"image":"","popup_html":""},{"latitude":37.7985318,"longitude":-122.4083999,"title":"Capo's","icon":null,"url":"#russian-hill","url_text":null,"image":"","popup_html":""},{"latitude":37.7457465,"longitude":-122.4195928,"title":"Cellarmaker House of Pizza","icon":null,"url":"#bernal-heights","url_text":null,"image":"","popup_html":""},{"latitude":37.7897337,"longitude":-122.4113615,"title":"Del Popolo","icon":null,"url":"#civic-center","url_text":null,"image":"","popup_html":""},{"latitude":37.7858351,"longitude":-122.404415,"title":"Delarosa","icon":null,"url":"#financial-district","url_text":null,"image":"","popup_html":""},{"latitude":37.80028699999999,"longitude":-122.4391102,"title":"Delarosa","icon":null,"url":"#marina","url_text":null,"image":"","popup_html":""},{"latitude":37.78662250000001,"longitude":-122.4018599,"title":"Delfina","icon":null,"url":"#financial-district","url_text":null,"image":"","popup_html":""},{"latitude":37.7613671,"longitude":-122.4243616,"title":"Delfina","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.78906449999999,"longitude":-122.4344257,"title":"Delfina","icon":null,"url":"#pacific-heights","url_text":null,"image":"","popup_html":""},{"latitude":37.7711576,"longitude":-122.4127272,"title":"DNA Pizza","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""},{"latitude":37.77678460000001,"longitude":-122.4227688,"title":"Doppio Zero","icon":null,"url":"#civic-center","url_text":null,"image":"","popup_html":""},{"latitude":37.7907478,"longitude":-122.4029275,"title":"Escape From New York Pizza","icon":null,"url":"#financial-district","url_text":null,"image":"","popup_html":""},{"latitude":37.7693186,"longitude":-122.4513502,"title":"Escape From New York Pizza","icon":null,"url":"#haight-ashbury","url_text":null,"image":"","popup_html":""},{"latitude":37.78219419999999,"longitude":-122.3976452,"title":"Escape From New York Pizza","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""},{"latitude":37.7774739,"longitude":-122.4072296,"title":"Extreme Pizza","icon":null,"url":"#multiple-locations","url_text":null,"image":"","popup_html":""},{"latitude":37.78191109999999,"longitude":-122.4845389,"title":"Fiorella","icon":null,"url":"#outer-richmond","url_text":null,"image":"","popup_html":""},{"latitude":37.7974533,"longitude":-122.4219004,"title":"Fiorella","icon":null,"url":"#russian-hill","url_text":null,"image":"","popup_html":""},{"latitude":37.7555042,"longitude":-122.4195814,"title":"Gabriella's","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.73399169999999,"longitude":-122.4342139,"title":"Gialina","icon":null,"url":"#glen-park","url_text":null,"image":"","popup_html":""},{"latitude":37.7764094,"longitude":-122.4258458,"title":"Gioia","icon":null,"url":"#western-addition","url_text":null,"image":"","popup_html":""},{"latitude":37.7829824,"longitude":-122.4610812,"title":"Giorgio's","icon":null,"url":"#inner-richmond","url_text":null,"image":"","popup_html":""},{"latitude":37.7997222,"longitude":-122.4080917,"title":"Golden Boy","icon":null,"url":"#north-beach","url_text":null,"image":"","popup_html":""},{"latitude":37.7669344,"longitude":-122.428653,"title":"Il Casaro Pizzeria","icon":null,"url":"#castroupper-market","url_text":null,"image":"","popup_html":""},{"latitude":37.7985,"longitude":-122.4073194,"title":"Il Casaro Pizzeria","icon":null,"url":"#north-beach","url_text":null,"image":"","popup_html":""},{"latitude":37.7594917,"longitude":-122.3881833,"title":"Long Bridge","icon":null,"url":"#dogpatch","url_text":null,"image":"","popup_html":""},{"latitude":37.7621074,"longitude":-122.435307,"title":"Marcello's","icon":null,"url":"#castroupper-market","url_text":null,"image":"","popup_html":""},{"latitude":37.7818596,"longitude":-122.4101827,"title":"Montesacro Pinseria","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""},{"latitude":37.7258387,"longitude":-122.4633134,"title":"Monza Pizzeria","icon":null,"url":"#west-of-twin-peaks","url_text":null,"image":"","popup_html":""},{"latitude":37.7643318,"longitude":-122.4216517,"title":"Nizario's","icon":null,"url":"#multiple-locations","url_text":null,"image":"","popup_html":""},{"latitude":37.760639,"longitude":-122.4351502,"title":"Oz","icon":null,"url":"#castroupper-market","url_text":null,"image":"","popup_html":""},{"latitude":37.77653919999999,"longitude":-122.4249244,"title":"Patxi's","icon":null,"url":"#multiple-locations","url_text":null,"image":"","popup_html":""},{"latitude":37.7575756,"longitude":-122.3899633,"title":"Piccino","icon":null,"url":"#dogpatch","url_text":null,"image":"","popup_html":""},{"latitude":37.76869349999999,"longitude":-122.4148318,"title":"Pink Onion","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.77148070000001,"longitude":-122.4050465,"title":"Pizza Squared","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""},{"latitude":37.7528086,"longitude":-122.5056001,"title":"The Pizza Place on Noriega","icon":null,"url":"#outer-sunset","url_text":null,"image":"","popup_html":""},{"latitude":37.7526168,"longitude":-122.4143518,"title":"The Pizza Shop","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.7441361,"longitude":-122.4206472,"title":"PizzaHacker","icon":null,"url":"#bernal-heights","url_text":null,"image":"","popup_html":""},{"latitude":37.7837099,"longitude":-122.4830173,"title":"Pizzetta 211","icon":null,"url":"#outer-richmond","url_text":null,"image":"","popup_html":""},{"latitude":37.78700329999999,"longitude":-122.4400291,"title":"The Presidio Pizza Company","icon":null,"url":"#western-addition","url_text":null,"image":"","popup_html":""},{"latitude":37.7724477,"longitude":-122.4374748,"title":"Ragazza","icon":null,"url":"#haight-ashbury","url_text":null,"image":"","popup_html":""},{"latitude":37.7426976,"longitude":-122.4758522,"title":"Seniore's","icon":null,"url":"#parkside","url_text":null,"image":"","popup_html":""},{"latitude":37.7713672,"longitude":-122.4136185,"title":"Seniore's","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""},{"latitude":37.772356,"longitude":-122.4297711,"title":"Seniore's","icon":null,"url":"#western-addition","url_text":null,"image":"","popup_html":""},{"latitude":37.757099,"longitude":-122.420611,"title":"Serrano's","icon":null,"url":"#mission","url_text":null,"image":"","popup_html":""},{"latitude":37.769745,"longitude":-122.44755,"title":"Slice House","icon":null,"url":"#haight-ashbury","url_text":null,"image":"","popup_html":""},{"latitude":37.7768524,"longitude":-122.4151327,"title":"Sunset Squares","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""},{"latitude":37.7977991,"longitude":-122.405242,"title":"Tommaso's Ristorante Italiano","icon":null,"url":"#financial-district","url_text":null,"image":"","popup_html":""},{"latitude":37.80022590000001,"longitude":-122.4090241,"title":"Tony’s Coal Fired Pizza & Slice House","icon":null,"url":"#north-beach","url_text":null,"image":"","popup_html":""},{"latitude":37.8003071,"longitude":-122.4090111,"title":"Tony's Pizza Napoletana","icon":null,"url":"#north-beach","url_text":null,"image":"","popup_html":""},{"latitude":37.77641870000001,"longitude":-122.4168885,"title":"Tony's Slice House at The Market","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""},{"latitude":37.798543,"longitude":-122.419157,"title":"Za Pizza","icon":null,"url":"#russian-hill","url_text":null,"image":"","popup_html":""},{"latitude":37.7816365,"longitude":-122.402083,"title":"Zero Zero","icon":null,"url":"#south-of-market-soma","url_text":null,"image":"","popup_html":""}],
+    {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null,"styles":"[]","customZoom":12}
+  );
+</script>
+
+<h2 id="by-neighborhood">By Neighborhood</h2>
+
+<h3 id="bernal-heights">Bernal Heights</h3>
+
+<h4 id="cellarmaker-house-of-pizza"><a href="http://cellarmakerbrewing.com/">Cellarmaker House of Pizza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Detroit</li>
+  <li>📍 <a href="https://maps.google.com/?cid=17909878048335708996">Google Maps</a></li>
+</ul>
+
+<h4 id="pizzahacker"><a href="http://thepizzahacker.com/">PizzaHacker</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=2683414900426186668">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="castroupper-market">Castro/Upper Market</h3>
+
+<h4 id="il-casaro-pizzeria"><a href="http://www.ilcasaropizzeria.com/">Il Casaro Pizzeria</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=6825261709325354175">Google Maps</a></li>
+</ul>
+
+<h4 id="marcellos"><a href="http://marcellospizza420.com/">Marcello’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=10309243954582511845">Google Maps</a></li>
+</ul>
+
+<h4 id="oz"><a href="https://www.ozpizzasf.com/">Oz</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=10737610729534280653">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="civic-center">Civic Center</h3>
+
+<h4 id="del-popolo"><a href="https://www.delpopolosf.com/">Del Popolo</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=7315423096143948808">Google Maps</a></li>
+</ul>
+
+<h4 id="doppio-zero"><a href="https://www.dzpizzeria.com/san-francisco">Doppio Zero</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=11911094549088691048">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="dogpatch">Dogpatch</h3>
+
+<h4 id="long-bridge"><a href="http://www.longbridgepizza.com/">Long Bridge</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York, Sicilian</li>
+  <li>📍 <a href="https://maps.google.com/?cid=12914241654456479691">Google Maps</a></li>
+</ul>
+
+<h4 id="piccino"><a href="http://www.piccino.com/">Piccino</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=9332737843888528132">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="financial-district">Financial District</h3>
+
+<h4 id="delarosa"><a href="http://www.delarosasf.com/?utm_source=yext&amp;utm_medium=gmb">Delarosa</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=12967830259543125804">Google Maps</a></li>
+</ul>
+
+<h4 id="delfina"><a href="https://www.pizzeriadelfina.com/location/pacific-heights/">Delfina</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=3201554873141950576">Google Maps</a></li>
+</ul>
+
+<h4 id="escape-from-new-york-pizza"><a href="https://escapefromnewyorkpizza.com/home/downtown/">Escape From New York Pizza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=10770226331408113529">Google Maps</a></li>
+</ul>
+
+<h4 id="tommasos-ristorante-italiano"><a href="http://tommasos.com/">Tommaso’s Ristorante Italiano</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=1604612803613866043">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="glen-park">Glen Park</h3>
+
+<h4 id="gialina"><a href="https://www.gialina.com/">Gialina</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=14505081418271178166">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="haight-ashbury">Haight Ashbury</h3>
+
+<h4 id="escape-from-new-york-pizza-1"><a href="https://escapefromnewyorkpizza.com/home/haight/">Escape From New York Pizza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=12586780895825249350">Google Maps</a></li>
+</ul>
+
+<h4 id="ragazza"><a href="http://www.ragazzasf.com/">Ragazza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=442598175282914992">Google Maps</a></li>
+</ul>
+
+<h4 id="slice-house"><a href="http://slicehousehaight.com/">Slice House</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=3470456051766939047">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="inner-richmond">Inner Richmond</h3>
+
+<h4 id="giorgios"><a href="http://www.giorgiospizza.com/">Giorgio’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=17845943405359656295">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="inner-sunset">Inner Sunset</h3>
+
+<h4 id="arizmendi-bakery"><a href="http://www.arizmendibakery.com/">Arizmendi Bakery</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=13622220163385564142">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="marina">Marina</h3>
+
+<h4 id="avellino"><a href="http://orderpizzeriaavellino.com/">Avellino</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=10638823291166129707">Google Maps</a></li>
+</ul>
+
+<h4 id="delarosa-1"><a href="http://www.delarosasf.com/?utm_source=yext&amp;utm_medium=gmb">Delarosa</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=1013703457966053960">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="mission">Mission</h3>
+
+<h4 id="arinell"><a href="http://www.arinellpizza.net/">Arinell</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=15009371001518665054">Google Maps</a></li>
+</ul>
+
+<h4 id="arizmendi-bakery-1"><a href="http://valencia.arizmendi.coop/">Arizmendi Bakery</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=11783633194763219119">Google Maps</a></li>
+</ul>
+
+<h4 id="beretta"><a href="http://berettasf.com/?utm_source=yext&amp;utm_medium=gmb">Beretta</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=8845976221826617844">Google Maps</a></li>
+</ul>
+
+<h4 id="delfina-1"><a href="https://www.delfinasf.com/">Delfina</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=12373724143351226560">Google Maps</a></li>
+</ul>
+
+<h4 id="gabriellas"><a href="https://www.gabriellasofny.com/">Gabriella’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=7699012399436781492">Google Maps</a></li>
+</ul>
+
+<h4 id="pink-onion"><a href="https://www.pinkonionpizza.com/">Pink Onion</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=5386588975478160168">Google Maps</a></li>
+</ul>
+
+<h4 id="the-pizza-shop"><a href="https://www.facebook.com/thepizzashopsf/">The Pizza Shop</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=3302398241532372927">Google Maps</a></li>
+</ul>
+
+<h4 id="serranos"><a href="http://www.serranospizzasanfran.com/">Serrano’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Unknown</li>
+  <li>📍 <a href="https://maps.google.com/?cid=10019521604773061977">Google Maps</a></li>
+  <li>📝<strong>Details:</strong> Checkout the Honorable Mention review of Serrano’s by J. Kenji López-Alt <a href="https://www.seriouseats.com/2015/01/the-best-pizza-by-the-slice-san-francisco-oakland-berkeley.html">here</a>.</li>
+</ul>
+
+<hr />
+
+<h3 id="multiple-locations">Multiple Locations</h3>
+
+<h4 id="extreme-pizza"><a href="http://extremepizza.com/">Extreme Pizza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=771879239306994621">Google Maps</a></li>
+</ul>
+
+<h4 id="nizarios"><a href="http://www.nizarios.com/">Nizario’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong></li>
+  <li>📍 <a href="https://maps.google.com/?cid=18376383330424820888">Google Maps</a></li>
+</ul>
+
+<h4 id="patxis"><a href="https://www.patxispizza.com/Location/HayesValley">Patxi’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Chicago deep-dish, Chicago thin-crust</li>
+  <li>📍 <a href="https://maps.google.com/?cid=6689533816815161239">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="noe-valley">Noe Valley</h3>
+
+<h4 id="bernal-heights-pizzeria"><a href="https://www.bernalheightspizzeria.com/">Bernal Heights Pizzeria</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=18056944402187404349">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="north-beach">North Beach</h3>
+
+<h4 id="golden-boy"><a href="http://www.goldenboypizza.com/">Golden Boy</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Sicilian</li>
+  <li>📍 <a href="https://maps.google.com/?cid=16218573224995018158">Google Maps</a></li>
+  <li>📝<strong>Details:</strong> Golden Boy Pizza founder Peter Sodini calls his pizza “Sanfrancilian”.</li>
+</ul>
+
+<h4 id="il-casaro-pizzeria-1"><a href="https://www.ilcasaropizzeria.com/">Il Casaro Pizzeria</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=6781377139221339014">Google Maps</a></li>
+</ul>
+
+<h4 id="tonys-coal-fired-pizza--slice-house"><a href="http://tonyscoalfired.com/">Tony’s Coal Fired Pizza &amp; Slice House</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York, New Haven, Sicilian, Grandma, Detriot, Chicago deep-dish</li>
+  <li>📍 <a href="https://maps.google.com/?cid=15078816331941649791">Google Maps</a></li>
+</ul>
+
+<h4 id="tonys-pizza-napoletana"><a href="http://tonyspizzanapoletana.com/">Tony’s Pizza Napoletana</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan, California, New York, Romana, Grandma, Sicilian, New Haven, St. Louis, Detroit, Trenton tomato pie</li>
+  <li>📍 <a href="https://maps.google.com/?cid=13813662513369709376">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="outer-richmond">Outer Richmond</h3>
+
+<h4 id="fiorella"><a href="http://www.fiorella-sf.com/">Fiorella</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=15246294121082901782">Google Maps</a></li>
+</ul>
+
+<h4 id="pizzetta-211"><a href="http://www.pizzetta211.com/">Pizzetta 211</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=797538431435835784">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="outer-sunset">Outer Sunset</h3>
+
+<h4 id="the-pizza-place-on-noriega"><a href="http://pizzaplacesf.com/">The Pizza Place on Noriega</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=6592182967898772594">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="pacific-heights">Pacific Heights</h3>
+
+<h4 id="delfina-2"><a href="https://www.pizzeriadelfina.com/location/pacific-heights/">Delfina</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=14654067745862335045">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="parkside">Parkside</h3>
+
+<h4 id="seniores"><a href="https://seniorespizza.com/">Seniore’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=2678254408511005217">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="russian-hill">Russian Hill</h3>
+
+<h4 id="capos"><a href="http://www.sfcapos.com/">Capo’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Chicago deep-dish, Chicago thin-crust, Detriot, Stuffed, Pan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=16429259145141206642">Google Maps</a></li>
+</ul>
+
+<h4 id="fiorella-1"><a href="http://www.fiorella-sf.com/">Fiorella</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=14915385542908023233">Google Maps</a></li>
+</ul>
+
+<h4 id="za-pizza"><a href="http://zapizzasf.com/">Za Pizza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=9190967331249309559">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="south-of-market-soma">South of Market (SoMa)</h3>
+
+<h4 id="dna-pizza"><a href="https://www.dnapizza.com/">DNA Pizza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=17944408828681906638">Google Maps</a></li>
+</ul>
+
+<h4 id="escape-from-new-york-pizza-2"><a href="https://escapefromnewyorkpizza.com/home/soma/">Escape From New York Pizza</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=15959322222048527135">Google Maps</a></li>
+</ul>
+
+<h4 id="montesacro-pinseria"><a href="https://www.montesacropinseria.com/san-francisco">Montesacro Pinseria</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Pinsa</li>
+  <li>📍 <a href="https://maps.google.com/?cid=11576266575661012832">Google Maps</a></li>
+</ul>
+
+<h4 id="pizza-squared"><a href="https://www.pizzasquaredsf.com/">Pizza Squared</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Detroit</li>
+  <li>📍 <a href="https://maps.google.com/?cid=15890547678782820464">Google Maps</a></li>
+</ul>
+
+<h4 id="seniores-1"><a href="https://www.orderseniorespizza.com/">Seniore’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=7867418685457688538">Google Maps</a></li>
+</ul>
+
+<h4 id="sunset-squares"><a href="https://www.sunsetsquares.com/">Sunset Squares</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Detroit</li>
+  <li>📍 <a href="https://maps.google.com/?cid=7799061018077816792">Google Maps</a></li>
+</ul>
+
+<h4 id="tonys-slice-house-at-the-market"><a href="http://www.visitthemarket.com/">Tony’s Slice House at The Market</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York</li>
+  <li>📍 <a href="https://maps.google.com/?cid=12565351475987877046">Google Maps</a></li>
+</ul>
+
+<h4 id="zero-zero"><a href="http://zerozerosf.com/">Zero Zero</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=12284537952679549396">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="west-of-twin-peaks">West of Twin Peaks</h3>
+
+<h4 id="monza-pizzeria"><a href="http://www.monzasf.com/">Monza Pizzeria</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=15959609110250801678">Google Maps</a></li>
+</ul>
+
+<hr />
+
+<h3 id="western-addition">Western Addition</h3>
+
+<h4 id="gioia"><a href="https://www.gioiapizzeria.com/">Gioia</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> New York/California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=12797299892603666091">Google Maps</a></li>
+  <li>📝<strong>Details:</strong> Gioia calls themselves a New York style pizzeria but their toppings and seasonal ingredients makes their pizza closer to California style so I’ve listed both but they only sell one kind of pizza.</li>
+</ul>
+
+<h4 id="the-presidio-pizza-company"><a href="http://www.presidiopizzacompany.com/">The Presidio Pizza Company</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> Grandma, Neapolitan</li>
+  <li>📍 <a href="https://maps.google.com/?cid=14983881902120956317">Google Maps</a></li>
+</ul>
+
+<h4 id="seniores-2"><a href="https://www.seniorespizzasanfrancisco.com/">Seniore’s</a></h4>
+
+<ul>
+  <li>🍕 <strong>Style:</strong> California</li>
+  <li>📍 <a href="https://maps.google.com/?cid=9413383802283012316">Google Maps</a></li>
+</ul>
+
+
+
+    
+    <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        Copyright (c) 2021 Colin McIntosh<br><br>
+
+        Licensed under the <a href="/LICENSE">Apache License, Version 2.0</a><br>
+        See <a href="/NOTICE">notices</a> for additional license information.
+    </div>
+    
+</div>
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+    diameter: 50,
+    backgroundColor: 'rgb(0, 0, 0)',
+    textColor: '#fff'
+})</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+<script>anchors.add("h2, h3");</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0K2FPDNK7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z0K2FPDNK7');
+</script>
+
+          <script async defer>
+
+
+            // Load maps only when DOM is loaded
+            document.addEventListener("DOMContentLoaded", function() {
+                if (window.google && window.google.maps && jekyllMaps) {
+                  // Maps script already loaded -> Execute callback method
+                  jekyllMaps.initializeMap();
+                } else if (!('IntersectionObserver' in window) ||
+                !('IntersectionObserverEntry' in window) ||
+                !('intersectionRatio' in window.IntersectionObserverEntry.prototype)) {
+                  // Intersection Observer -> Backup solution : load maps now
+                  lazyLoadGoogleMap();
+                } else {
+                  // Google Maps not loaded & Intersection Observer working -> Enable it
+                  enableMapsObserver();
+                }
+            });
+
+            function enableMapsObserver() {
+              // Enable Observer on all Maps
+              var maps = document.getElementsByClassName('jekyll-map');
+
+              const observer = new IntersectionObserver(function(entries, observer) {
+                // Test if one of the maps is in the viewport
+                var isIntersecting = typeof entries[0].isIntersecting === 'boolean' ? entries[0].isIntersecting : entries[0].intersectionRatio > 0;
+                if (isIntersecting) {
+                  lazyLoadGoogleMap();
+                  observer.disconnect();
+                }
+              });
+
+              for(var i = 0; i < maps.length; i++) {
+                observer.observe(maps[i]);
+              }
+            }
+
+            function lazyLoadGoogleMap() {
+                // If google maps api script not already loaded
+                if(!window.google || !window.google.maps) {
+                  var fjs = document.getElementsByTagName('script')[0];
+                  var js = document.createElement('script');
+                  js.id = 'gmap-api';
+                  js.setAttribute('async', '');
+                  js.setAttribute('defer', '');
+                  js.src = "//maps.google.com/maps/api/js?key=AIzaSyD-gOLIiyuKcFS2-XcuMUps7UVJmRCHoNM&callback=jekyllMaps.initializeMap";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+            }
+          </script>
+
+
+</body>
+</html>

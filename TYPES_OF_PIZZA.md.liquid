@@ -1,0 +1,19 @@
+# [San Francisco Pizza]({{ '/' | relative_link }})
+
+[⬅️Back to the list]({{ '/' | relative_link }})
+
+## Types or Styles of Pizza
+
+{% for t in site.data.types %}
+
+### {{ t.name }}
+{% if t.description or t.image %}
+{{ t.description }}
+{% if t.image %}
+![{{ t.name }}]({{ '/assets/images/' | append: t.image | relative_url }})
+{% endif %}
+{% unless forloop.last %}
+---
+{% endunless %}
+{% endif %}
+{% endfor %}
