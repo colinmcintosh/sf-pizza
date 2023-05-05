@@ -62,13 +62,26 @@
     Slices are often folded over lengthwise and eaten one-handed.
 
 - name: Ohio Valley
-  description:
+  description: >
+    Ohio Valley-style pizza has thick, square-cut crust, generous amount of cheese, and simple toppings.
+    The crust is typically made with a high-gluten flour and is allowed to rise for several hours before
+    it is baked in a hot oven. The cheese is typically a blend of mozzarella and provolone, and the
+    toppings are typically limited to tomato sauce, pepperoni, sausage, and mushrooms.
 
 - name: Old Forge
-  description:
+  description: >
+    Old Forge style pizza is a type of pizza that originates from the small town of Old Forge, Pennsylvania.
+    It is sometimes referred to as "Pennsylvania-style pizza" or "Old Forge tomato pie." The crust of an Old Forge
+    style pizza is typically cut rectangular and has a slightly crispy texture. The dough made with a blend of wheat
+    flour and cornmeal, which gives it a slightly sweet and slightly crunchy taste. The sauce is also has a distinct
+    flavor, usually made with a combination of canned tomatoes and tomato paste, as well as a blend of spices. The
+    cheese used on an Old Forge style pizza is often a blend of mozzarella and a local cheese called
+    "Old Forge-style cheese," which has a slightly tangy flavor and melts easily.
 
 - name: Pan
-  description:
+  description: >
+    Pan pizza is any type of pizza that is baked in a deep dish pan. The pan helps to create a thicker,
+    more flavorful crust. Pan pizza is often topped with a generous amount of cheese and toppings.
 
 - name: Pinsa
   description: >
@@ -77,22 +90,53 @@
     crust.
 
 - name: Quad City
-  description:
+  description: >
+    Quad City-style pizza is a variety of pizza originating in the Quad Cities region of the
+    states of Illinois and Iowa in the United States. It is characterized by its thin crust,
+    malt-infused dough, and toppings that are placed under the cheese. The pizzas are typically
+    cut into strips instead of triangular slices.
 
 - name: Sheet
-  description:
+  description: >
+    Sheet pizza is a type of pizza that is baked on a sheet pan. It is typically rectangular
+    (like the sheet), cut in square or rectangular slices, and served for a family meal or at an
+    event with a large number of people. Sheet pizza is often made with a pre-made crust, which makes
+    it a quick and easy option for busy weeknights. The crust is typically thin and crispy, and the
+    toppings are typically simple and classic, such as pepperoni, sausage, mushrooms, onions, and peppers.
 
 - name: Sicilian
-  description:
+  description: >
+    A square or rectangular pizza that is characterized by a thick, fluffy crust that is crispy on
+    the outside. The crust has a light and airy texture. Sicilian style pizza is often baked in a
+    deep dish, which gives the crust its characteristic height. Toppings on Sicilian style pizza can
+    vary, but are often more sparingly used than on other pizza styles.
 
 - name: St. Louis
-  description:
+  description: >
+    St. Louis-style pizza is a type of pizza popular in St. Louis, Missouri, and surrounding areas. The
+    style has a thin cracker-like crust made without yeast, generally uses Provel cheese, and is cut into
+    squares or rectangles instead of wedges.
 
 - name: Stuffed
-  description:
+  description: >
+    Stuffed pizza is a type of pizza that has an extra layer of dough on top of the toppings and cheese.
+    This extra layer of dough is typically pressed down to create a seal around the toppings and cheese,
+    and it is then baked along with the rest of the pizza. This different from stuffed crust pizza, which
+    is typically a pizza with a cheese-filled crust.
+    
+- name: Stuffed crust
+  description: >
+    Stuffed crust pizza is a type of pizza with cheese stuffed into the crust. It was popularized by
+    Pizza Hut beginning in 1995.
 
 - name: Italian tomato pie
-  description:
+  description: >
+    Italian tomato pie is a type of pizza that is popular in the Northeast United States. It has a thick, porous,
+    focaccia-like dough covered with tomato sauce. It may be lightly sprinkled with oregano or romano cheese (less common).
 
 - name: Trenton tomato pie
-  description:
+  description: >
+    Trenton tomato pie is a type of pizza that originated in Trenton, New Jersey in which cheese and other toppings
+    are added on first, then the sauce. Unlike the thicker square Italian tomato pie, Trenton tomato pie is often
+    circular, of the thin-crust variety and includes cheese. In this style of tomato pie, the mozzarella and toppings
+    are placed on the pie first followed by the tomato sauce placed on top.
