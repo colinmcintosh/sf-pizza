@@ -3,9 +3,9 @@
 A list of pizza places in San Francisco, California.
 
 This is meant to be a comprehensive and neutral list of pizza that can be found in San Francisco. Pizza places are
-listed by neighborhood. Neighorhoods listed below are using the
+listed by neighborhood. Neighborhoods listed below are using the
 borders [used by the SF Planning Department](https://sfplanninggis.org/neighborhoodorganizations/). This
-is not the most comprehensive neighborhood list but was sufficient for use here. If a restaurant has more than 3
+is not the most comprehensive neighborhood list but was sufficient for use here. If a restaurant has 4 or more
 locations it's listed at the bottom in
 [Multiple Locations](#multiple-locations) section.
 
@@ -18,8 +18,6 @@ Add your suggestions, corrections, and changes [on GitHub](https://github.com/co
 
 ## By Neighborhood
 
-{% assign last_neighborhood = site.data.pizza.neighborhoods | last %}
-{{ last_neighborhood }}
 {% for neighborhood in site.data.pizza.neighborhoods %}
 
 {% assign places = site.data.pizza.places | where: "neighborhood", neighborhood[0] %}

@@ -3,12 +3,16 @@ neighborhoods:
     name: Bernal Heights
   castro:
     name: Castro/Upper Market
+  chinatown:
+    name: Chinatown
   civic_center:
     name: Civic Center
   dogpatch:
     name: Dogpatch
   financial_district:
     name: Financial District
+  fishermans_wharf:
+    name: Fisherman's Wharf
   glen_park:
     name: Glen Park
   haight_ashbury:
@@ -21,6 +25,8 @@ neighborhoods:
     name: Marina
   mission:
     name: Mission
+  mission_bay:
+    name: Mission Bay
   nob_hill:
     name: Nob Hill
   noe_valley:
@@ -35,12 +41,16 @@ neighborhoods:
     name: Outer Richmond
   outer_sunset:
     name: Outer Sunset
+  pacific_heights:
+    name: Pacific Heights
   parkside:
     name: Parkside
   russian_hill:
     name: Russian Hill
   soma:
     name: South of Market (SoMa)
+  tenderloin:
+    name: Tenderloin
   west_of_twin_peaks:
     name: West of Twin Peaks
   western_addition:
@@ -49,6 +59,14 @@ neighborhoods:
     name: Multiple Locations
 
 places:
+  - name: Angie's Pizza
+    neighborhood: mission
+    style:
+      - California
+      - Neapolitan
+    maps: https://www.google.com/maps/place/Angie's+Pizza/@37.7649,-122.4235,17z
+    website: https://www.angiespizzasf.com/
+
   - name: Arinell
     neighborhood: mission
     style:
@@ -96,7 +114,7 @@ places:
     style:
       - Chicago deep-dish
       - Chicago thin-crust
-      - Detriot
+      - Detroit
       - Stuffed
       - Pan
     maps: https://goo.gl/maps/HZ4Wgrkh6nqWT89Q7
@@ -109,33 +127,27 @@ places:
     maps: https://maps.google.com/place/Cellarmaker+House+of+Pizza/@37.7457465,-122.4217815,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fe2326ae731:0xf88cab31c19dc344!8m2!3d37.7457572!4d-122.4196337
     website: https://cellarmakerbrewing.com/house-of-pizza/
 
-  - name: Del Popolo
-    neighborhood: civic_center
+  - name: Damnfine
+    neighborhood: outer_sunset
     style:
       - Neapolitan
-    maps: https://goo.gl/maps/8Awn9ricfCqPntBv9
-    website: https://www.delpopolosf.com/
+      - California
+    maps: https://www.google.com/maps/place/Damnfine/@37.7608,-122.5075,17z
+    website: https://damnfineco.com/
 
   - name: Delarosa
     neighborhood: financial_district
     style:
-      - Neapolitan
+      - Pinsa
     maps: https://goo.gl/maps/bC4AfSAEgh3yanFy6
-    website: https://www.delarosasf.com/food-downtown/
+    website: https://www.delarosasf.com/location/downtown/
 
   - name: Delarosa
     neighborhood: marina
     style:
-      - Neapolitan
+      - Pinsa
     maps: https://goo.gl/maps/KQwSZzP8FxhDrkw69
-    website: https://www.delarosasf.com/food-downtown/
-
-  - name: Delfina
-    neighborhood: financial_district
-    style:
-      - Neapolitan
-    maps: https://goo.gl/maps/Y89Bjex4mxvzkJTY6
-    website: https://www.pizzeriadelfina.com/location/downtown/
+    website: https://www.delarosasf.com/location/marina/
 
   - name: Delfina
     neighborhood: mission
@@ -179,13 +191,6 @@ places:
     maps: https://goo.gl/maps/dqMVCk1JGXsJbaJU8
     website: https://escapefromnewyorkpizza.com/home/haight/
 
-  - name: Escape From New York Pizza
-    neighborhood: soma
-    style:
-      - New York
-    maps: https://goo.gl/maps/KEJxmnbYgGTg7bi76
-    website: https://escapefromnewyorkpizza.com/home/soma/
-
   - name: Extreme Pizza
     neighborhood: multiple
     style:
@@ -207,6 +212,30 @@ places:
     maps: https://goo.gl/maps/xaq1WoaNLHyLeGZ67
     website: https://www.fiorella-sf.com/
 
+  - name: Flour + Water Pizza Shop
+    neighborhood: mission_bay
+    style:
+      - Neapolitan
+      - California
+    maps: https://www.google.com/maps/search/?api=1&query=Flour+%2B+Water+Pizza+Shop+1090+Dr.+Maya+Angelou+Lane+San+Francisco
+    website: https://www.fwpizzashop.com/mission-rock
+
+  - name: Flour + Water Pizza Shop
+    neighborhood: north_beach
+    style:
+      - Neapolitan
+      - California
+    maps: https://www.google.com/maps/search/?api=1&query=Flour+%2B+Water+Pizza+Shop+1533+Stockton+St+San+Francisco
+    website: https://www.fwpizzashop.com/north-beach
+
+  - name: Flour + Water Pizzeria
+    neighborhood: north_beach
+    style:
+      - Neapolitan
+      - California
+    maps: https://www.google.com/maps/search/?api=1&query=Flour+%2B+Water+Pizzeria+532+Columbus+Ave+San+Francisco
+    website: https://www.fwpizzeria.com/
+
   - name: Gabriella's
     neighborhood: mission
     style:
@@ -224,7 +253,8 @@ places:
   - name: Gioia
     neighborhood: western_addition
     style:
-      - New York/California
+      - New York
+      - California
     maps: https://goo.gl/maps/bHd8Mh5EQSz7SXqr5
     website: https://www.gioiapizzeria.com/
     details: >
@@ -244,7 +274,15 @@ places:
     style:
       - Sicilian
     maps: https://goo.gl/maps/avUgHrEfm2kXAG4y7
-    website: http://www.goldenboypizza.com/
+    website: https://www.goldenboypizza.com/northbeach
+    details: Golden Boy Pizza founder Peter Sodini calls his pizza “Sanfrancilian”.
+
+  - name: Golden Boy
+    neighborhood: parkside
+    style:
+      - Sicilian
+    maps: https://www.google.com/maps/search/?api=1&query=Golden+Boy+Pizza+1447+Taraval+Street+San+Francisco
+    website: https://www.goldenboypizza.com/sunset
     details: Golden Boy Pizza founder Peter Sodini calls his pizza “Sanfrancilian”.
 
   - name: Il Casaro Pizzeria
@@ -260,6 +298,24 @@ places:
       - Neapolitan
     maps: https://goo.gl/maps/WE5qBb7T6YaCmCvt6
     website: https://www.ilcasaropizzeria.com/
+
+  - name: Jules
+    neighborhood: haight_ashbury
+    style:
+      - New York
+      - California
+    maps: https://www.google.com/maps/search/?api=1&query=Jules+Pizza+237+Fillmore+Street+San+Francisco
+    website: https://www.julespizza.co/
+    details: >
+      Sourdough New York-style pizza with California produce from chef Max Blachman-Gentile.
+
+  - name: Little Star Pizza
+    neighborhood: mission
+    style:
+      - Chicago deep-dish
+      - California
+    maps: https://www.google.com/maps/search/?api=1&query=Little+Star+Pizza+400+Valencia+St+San+Francisco
+    website: https://littlestarvalencia.com/
 
   - name: Long Bridge
     neighborhood: dogpatch
@@ -281,7 +337,7 @@ places:
     style:
       - Pinsa
     maps: https://www.google.com/maps/place/MONTESACRO+San+Francisco/@37.7818222,-122.4122165,17z/data=!3m1!4b1!4m5!3m4!1s0x80858084f9babd2f:0xa0a7291deb809760!8m2!3d37.7819848!4d-122.4103377
-    website: https://www.montesacropinseria.com/san-francisco
+    website: https://www.montesacro.com/
 
   - name: Monza Pizzeria
     neighborhood: west_of_twin_peaks
@@ -291,11 +347,35 @@ places:
     website: https://www.monzasf.com/
 
   - name: Nizario's
-    neighborhood: multiple
+    neighborhood: inner_richmond
     style:
-      -
-    maps:
-    website: http://nizarios.com/
+      - New York
+    maps: https://www.google.com/maps/place/3840+Geary+Blvd,+San+Francisco,+CA+94118
+    website: https://www.nizarios.com/
+
+  - name: Nizario's
+    neighborhood: ocean_view
+    style:
+      - New York
+    maps: https://maps.app.goo.gl/YHf2QdcCE6fu5z3T9
+    website: https://www.nizarios.com/
+    details: Located in the SF State student union. Hours vary with the school year.
+
+  - name: Outta Sight Pizza
+    neighborhood: chinatown
+    style:
+      - New York
+      - California
+    maps: https://www.google.com/maps/search/?api=1&query=Outta+Sight+Pizza+643+Clay+Street+San+Francisco
+    website: https://www.thatsouttasight.com/
+
+  - name: Outta Sight Pizza
+    neighborhood: tenderloin
+    style:
+      - New York
+      - California
+    maps: https://www.google.com/maps/search/?api=1&query=Outta+Sight+Pizza+422+Larkin+St+San+Francisco
+    website: https://www.thatsouttasight.com/
 
   - name: Oz
     neighborhood: castro
@@ -305,12 +385,12 @@ places:
     website: https://www.ozpizzasf.com/
 
   - name: Patxi's
-    neighborhood: multiple
+    neighborhood: western_addition
     style:
       - Chicago deep-dish
       - Chicago thin-crust
-    maps:
-    website: https://patxispizza.com/
+    maps: https://www.google.com/maps/search/?api=1&query=Patxi's+Pizza+511+Hayes+St+San+Francisco
+    website: https://patxispizza.com/location/hayes-valley/
 
   - name: Piccino
     neighborhood: dogpatch
@@ -319,19 +399,20 @@ places:
     maps: https://www.google.com/maps/place/Piccino/@37.7575756,-122.392152,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fb9f9f92d67:0x81848b9f3ed21b04!8m2!3d37.7575668!4d-122.3900567
     website: https://www.piccino.com/
 
+  - name: Pie Punks
+    neighborhood: soma
+    style:
+      - Detroit
+      - Grandma
+    maps: https://www.google.com/maps/search/?api=1&query=Pie+Punks+145+2nd+St+San+Francisco
+    website: https://piepunkssf.com/
+
   - name: Pink Onion
     neighborhood: mission
     style:
       - Neapolitan
     maps: https://goo.gl/maps/XeSg4Xi8uWAuDmUcA
     website: https://www.pinkonionpizza.com/
-
-  - name: Pizza Squared
-    neighborhood: soma
-    style:
-      - Detroit
-    maps: https://goo.gl/maps/gXvAynuDZEWykKjy7
-    website: https://www.pizzasquaredsf.com/
 
   - name: The Pizza Place on Noriega
     neighborhood: outer_sunset
@@ -345,7 +426,7 @@ places:
     style:
       - New York
     maps: https://goo.gl/maps/Sxrs5kXtj7keK6zW6
-    website: https://www.facebook.com/thepizzashopsf/
+    website: https://order.online/store/the-pizza-shop-san-francisco-293562/
 
   - name: PizzaHacker
     neighborhood: bernal_heights
@@ -368,13 +449,6 @@ places:
       - Neapolitan
     maps: https://goo.gl/maps/1sHTp7gQAf6fyxFm9
     website: https://www.presidiopizzacompany.com/
-
-  - name: Ragazza
-    neighborhood: haight_ashbury
-    style:
-      - Neapolitan
-    maps: https://goo.gl/maps/LmvWWNEHMsEJtHzdA
-    website: https://www.ragazzasf.com/
 
   - name: Seniore's
     neighborhood: parkside
@@ -400,7 +474,7 @@ places:
   - name: Serrano's
     neighborhood: mission
     style:
-      - Unknown
+      - New York
     maps: https://www.google.com/maps/place/Serrano's+Pizza+and+Pasta/@37.757099,-122.4227997,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e3e84c45f33:0x8b0c7dd057d9a559!8m2!3d37.757099!4d-122.420611
     website: https://www.serranospizzasanfran.com/
     details: >
@@ -414,6 +488,20 @@ places:
     maps: https://goo.gl/maps/iHXDBCZ5nt8bz16k9
     website: https://slicehousehaight.com/
 
+  - name: Square Pie Guys
+    neighborhood: fishermans_wharf
+    style:
+      - Detroit
+    maps: https://www.google.com/maps/search/?api=1&query=Square+Pie+Guys+845+Beach+St+San+Francisco
+    website: https://www.squarepieguys.com/
+
+  - name: Square Pie Guys
+    neighborhood: soma
+    style:
+      - Detroit
+    maps: https://www.google.com/maps/search/?api=1&query=Square+Pie+Guys+1077+Mission+St+San+Francisco
+    website: https://www.squarepieguys.com/
+
   - name: Sunset Squares
     neighborhood: soma
     style:
@@ -422,7 +510,7 @@ places:
     website: https://www.sunsetsquares.com/
 
   - name: Tommaso's Ristorante Italiano
-    neighborhood: financial_district
+    neighborhood: north_beach
     style:
       - Neapolitan
     maps: https://www.google.com/maps/place/Tommaso's+Ristorante+Italiano/@37.7977991,-122.4074307,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f4f5dcee0f:0x1644bad7e172b83b!8m2!3d37.7977796!4d-122.405342
@@ -435,7 +523,7 @@ places:
       - New Haven
       - Sicilian
       - Grandma
-      - Detriot
+      - Detroit
       - Chicago deep-dish
     maps: https://goo.gl/maps/ges5rKo59a7tHNas5
     website: https://tonyscoalfired.com/
@@ -456,32 +544,9 @@ places:
     maps: https://goo.gl/maps/6mGuevmBNS6yizTT8
     website: https://tonyspizzanapoletana.com/
 
-  - name: Tony's Slice House at The Market
-    neighborhood: soma
-    style:
-      - New York
-    maps: https://goo.gl/maps/D5R5VKFHG4d7bZtA7
-    website: https://visitthemarket.com/department/slice-house/
-
   - name: Za Pizza
     neighborhood: russian_hill
     style:
       - New York
     maps: https://goo.gl/maps/n4aQjVAwi9B3AfbP9
     website: https://zapizzasf.com/
-
-  - name: Zero Zero
-    neighborhood: soma
-    style:
-      - California
-    maps: https://www.google.com/maps/place/Zero+Zero/@37.7816365,-122.4042717,17z/data=!3m1!4b1!4m5!3m4!1s0x80858080a56c5bf9:0xaa7b722e8344d9d4!8m2!3d37.7816365!4d-122.402083
-    website: https://zerozerosf.com/
-
-todo:
-  - Casey’s
-  - Flour+Water
-  - Jersey
-  - Little Star
-  - Pazzia
-
-
